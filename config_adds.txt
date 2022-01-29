@@ -1,0 +1,8 @@
+###############################################################################################################################################################
+##                                                                           OPENBOX-WM                                                                      ##
+###############################################################################################################################################################
+
+# Install applications:
+
+git wget openbox obconf xorg-xinitrc xorg-server xterm compton tint2 nitrogen lxappearance feh mc ranger sakura(lxterminal,xfce4-terminal, etc)  rofi pcmanfm adapta-gtk-theme papirus-icon-theme
+xfce4-power-settings neofetch wpa_supplicant networkmanager arandr
