@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Vaqua</name>
+    <name>Win10</name>
     <titleLayout>CMILN</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -320,9 +320,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>leafpad</name>
+          <name>Mosepad</name>
         </startupnotify>
-        <command>leafpad</command>
+        <command>mousepad</command>
       </action>
     </keybind>
     <keybind key="W-w">
@@ -359,6 +359,15 @@
           <name>screenshot</name>
         </startupnotify>
         <command>~/./screenshot</command>
+      </action>
+    </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Lock</name>
+        </startupnotify>
+        <command>slock</command>
       </action>
     </keybind>
     <keybind key="W-t">
