@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<openbox_menu xmlns="http://openbox.org/3.4/menu">
+<openbox_menu xmlns="http://openbox.org/3.6.1/menu">
 
 <menu id="apps-accessories-menu" label="Accessories">
   <item label="Galculator">
     <action name="Execute">
-      <command>galcularot</command>
+      <command>galculator</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Periodic Table">
+    <action name="Execute">
+      <command>eperiodique</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Scanner">
+    <action name="Execute">
+      <command>gscan2pdf</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Display">
+    <action name="Execute">
+      <command>arandr</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Blanket">
+    <action name="Execute">
+      <command>python3</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
@@ -16,19 +48,19 @@
 <menu id="apps-editors-menu" label="Editors">
   <item label="Vim">
     <action name="Execute">
-      <command>vim</command>
+      <command>alacritty -e vim</command>
       <startupnotify>
         <enabled>yes</enabled>
         <wmclass>Vim</wmclass>
       </startupnotify>
     </action>
   </item>
-  <item label="Leafpad">
+  <item label="Mousepad">
     <action name="Execute">
-      <command>leafpad</command>
+      <command>mousepad</command>
       <startupnotify>
         <enabled>yes</enabled>
-        <wmclass>Leafpad</wmclass>
+        <wmclass>Mousepad</wmclass>
       </startupnotify>
     </action>
   </item>
@@ -110,12 +142,151 @@
       </startupnotify>
     </action>
   </item>
+<item label="VLC">
+    <action name="Execute">
+      <command>vlc</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Spector">
+    <action name="Execute">
+      <command>spek</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Volume">
+    <action name="Execute">
+      <command>pavucontrol</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
 </menu>
 
 <menu id="apps-fileman-menu" label="File Managers">
-  <item label="Thunar">
+  <item label="Pcmanfm">
     <action name="Execute">
-      <command>Thunar</command>
+      <command>pcmanfm</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+<item label="MC">
+    <action name="Execute">
+      <command>alacritty -e mc</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+<item label="Ranger">
+    <action name="Execute">
+      <command>alacritty -e ranger</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-games-menu" label="Games">
+  <item label="Stella">
+    <action name="Execute">
+      <command>stella</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Retro">
+    <action name="Execute">
+      <command>retroarch</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Mednaffe">
+    <action name="Execute">
+      <command>mednaffe</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="MelonDS">
+    <action name="Execute">
+      <command>melonDS</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Snes">
+    <action name="Execute">
+      <command>snes9x-gtk</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="GamevoyAdvanced">
+    <action name="Execute">
+      <command>mgba-qt</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Steam">
+    <action name="Execute">
+      <command>steam</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Linux Breakout 2">
+    <action name="Execute">
+      <command>lbreakout2</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Minetes">
+    <action name="Execute">
+      <command>minetest</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Dreamchess">
+    <action name="Execute">
+      <command>dreamchess</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="SuperTuxKart">
+    <action name="Execute">
+      <command>supertuxkart</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <iten label="Itch">
+    <action name="execute">
+      <command>itch-bin</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
@@ -127,6 +298,14 @@
   <item label="Gimp">
     <action name="Execute">
       <command>gimp</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Gthumb">
+    <action name="Execute">
+      <command>gthumb</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
@@ -174,7 +353,8 @@
   <menu id="apps-multimedia-menu"/>
   <menu id="apps-term-menu"/>
   <menu id="apps-fileman-menu"/>
-  <separator label="System" />
+  <menu id="apps-games-menu"/>
+  <separator label="System"/>
   <menu id="system-menu"/>
   <separator />
   <item label="Log Out">
