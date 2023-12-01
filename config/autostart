@@ -1,15 +1,16 @@
-#
 # These things are run when an Openbox X Session is started.
 # You may place a similar script in $HOME/.config/openbox/autostart
 # to run user-specific things.
 #
+
 setxkbmap -layout 'es' &
 picom -cCGF &
 tint2 &
-nitrogen --restore
+feh --bg-scale /home/tuxi/Pictures/piccas_img/Panevėžys_miestas.png &
 ~/./pipewire-pulse &
-xscreensaver -nosplash &
-fcitx -s 3 &
+fcitx5 -s 3 &
+xrandr --output eDP-1 --brightness 1 &
+xrandr --output HDMI-1 --brightness 1 &
 
 # If you want to use GNOME config tools...
 #
@@ -22,3 +23,5 @@ fcitx -s 3 &
 # If you want to use XFCE config tools...
 #
 #xfce-mcs-manager &
+
+
